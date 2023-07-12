@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>books</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body onload="initClock()">
+    <div class="date-time">
+        <div class="date">
+            <span id="dayname">Day</span>
+            <span id="month">Month</span>
+            <span id="daynum">00</span>,
+            <span id="year">Year</span>
+        </div>
+        <div class="time">
+            <span id="hour">00</span>:
+            <span id="minutes">00</span>:
+            <span id="seconds">00</span>
+            <span id="period">AM</span>
+        </div>
+    </div>
+    <div class="wrapper">
+        <h1>Awesome books</h1>
+        <div id="display"></div>
+        <form action="" id="frm_books">
+            <input type="text" id="title" name="title" placeholder="Title">
+            <br><br>
+            <input type="text" id="author" name="author" placeholder="Author">
+            <br><br>
+            <button type="submit">Add</button>
+        </form>
+        <script src="./modules/index.js"></script>
+    </div>
+
+    
+</body>
+</html>
