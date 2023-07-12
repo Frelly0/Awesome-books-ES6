@@ -7,7 +7,21 @@
     <title>books</title>
     <link rel="stylesheet" href="./index.css">
 </head>
-<body>
+<body onload="initClock()">
+    <div class="date-time">
+        <div class="date">
+            <span id="dayname">Day</span>
+            <span id="month">Month</span>
+            <span id="daynum">00</span>,
+            <span id="year">Year</span>
+        </div>
+        <div class="time">
+            <span id="hour">00</span>:
+            <span id="minutes">00</span>:
+            <span id="seconds">00</span>
+            <span id="period">AM</span>
+        </div>
+    </div>
     <div class="wrapper">
         <h1>Awesome books</h1>
         <div id="display"></div>
@@ -18,7 +32,9 @@
             <br><br>
             <button type="submit">Add</button>
         </form>
-        <script src="./index.js"></script>
+        <script src="./modules/index.js"></script>
     </div>
+
+    
 </body>
 </html>
